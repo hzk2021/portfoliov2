@@ -1,4 +1,4 @@
-import { Spacer, Flex } from '@chakra-ui/react';
+import { Spacer, Flex, Text } from '@chakra-ui/react';
 import SidebarTab from './SidebarTab';
 import {AiFillGithub, AiFillLinkedin, AiFillHome, AiFillIdcard} from 'react-icons/ai'
 import {BiSolidUser} from 'react-icons/bi'
@@ -23,15 +23,17 @@ function Sidebar() {
         <Flex role={'navigation'}
               position={"relative"}
               left={0}
-              minHeight={"100%"} 
+              minHeight={"100vh"} 
               direction="column"
               border={0}
               align='center' 
-              backgroundColor={"#181818"}>
+              backgroundColor={"#181818"}
+              p={3}>
 
-              <div>
+              <Flex direction='column' align="center" w={"3rem"}>
                 <ProfileIcon />
-              </div>
+                <Text fontSize={'sm'} color="white" fontWeight="bold" mt={2}>zhenkai</Text>
+              </Flex>
 
               <Spacer/>
               

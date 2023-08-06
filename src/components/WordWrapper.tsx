@@ -9,7 +9,6 @@ type wrapperProps = {
 export default function Wrapper(props : wrapperProps) {
   return (
     <Container 
-      fontFamily="Poppins, var(--chakra-fonts-body)"
       color='white'
       _before={{
         content: '"<section>"',
@@ -18,7 +17,7 @@ export default function Wrapper(props : wrapperProps) {
         color: "#515152",
         fontFamily: "La Belle Aurore, cursive",
         fontWeight: "bold",
-        fontSize: "1.4rem"
+        fontStyle: 'italic',
 
       }}
       _after={{
@@ -28,7 +27,8 @@ export default function Wrapper(props : wrapperProps) {
         color: "#515152",
         fontFamily: "La Belle Aurore, cursive",
         fontWeight: "bold",
-        fontSize: "1.4rem"
+        fontStyle: 'italic',
+
       }}>
 
 
@@ -39,25 +39,26 @@ export default function Wrapper(props : wrapperProps) {
               content: '"<h1>"',
               display: 'block',
               color: "#515152",
-              fontFamily: "La Belle Aurore, cursive",
+              fontFamily: "'La Belle Aurore', cursive",
+              fontStyle: 'italic',
               fontWeight: "bold",
-              fontSize: "1.4rem"
+              fontSize: "1rem"
             }}
             _after={{
               content: '"</h1>"',
               display: 'block',
               color: "#515152",
-              fontFamily: "La Belle Aurore, cursive",
+              fontFamily: "'La Belle Aurore', cursive",
               fontWeight: "bold",
-              fontSize: "1.4rem",
+              fontStyle: 'italic',
+              fontSize: "1rem",
             }}>
 
             {props.h1Text}
       </Text>
 
       <Text fontSize={['0.9rem', '1rem']} 
-            fontWeight='medium'
-            fontFamily="Poppins, var(--chakra-fonts-body)">
+            fontWeight='medium'>
             {props.content}
       </Text>
 

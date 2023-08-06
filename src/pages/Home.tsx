@@ -1,4 +1,5 @@
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, Center, Flex, Show } from "@chakra-ui/react";
+import ProfileIcon from "../components/Sidebar/ProfileIcon";
 import WordWrapper from "../components/WordWrapper";
 
 const introMessage = <span>
@@ -15,17 +16,33 @@ const content = <span>
   <br/>
   Check out my portfolio!
 
-  <Box mt={5}>
+  <span style={{display: "block", marginTop: 10}}>
     <Button w={'100%'}>Website</Button>
-  </Box>
+  </span>
 </span>
 
 function Home() {
   
   return (
-    <WordWrapper 
-      h1Text={introMessage}
-      content={content}/>
+    <Flex grow={1}>
+      <Box flexGrow={1}>
+        <WordWrapper 
+          h1Text={introMessage}
+          content={content}/>
+      </Box>
+
+      <Center flexGrow={1}>
+        <Show above="lg">
+          <Box w={"10rem"} 
+            transition="all 0.5s"
+            _hover={{
+              transform: 'scale(1.2)',
+            }}>
+            <ProfileIcon/>
+          </Box>
+        </Show>
+      </Center>
+    </Flex>
   )
 }
 
