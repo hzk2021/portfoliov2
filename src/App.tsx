@@ -14,13 +14,12 @@ function App() {
   return (
     <ChakraProvider>
       <TabContext.Provider value={{tab, setTab}}>
-        <Layout>
-            <BrowserRouter>
-              <Routes>
-                <Route path="/" element={<Home />} />
-              </Routes>
-            </BrowserRouter>
-        </Layout>
+        <BrowserRouter>
+            <Routes>
+              <Route path='/' element={<Layout><Home /></Layout>} />
+            </Routes>
+        </BrowserRouter>
+
       </TabContext.Provider>
     </ChakraProvider>
   )

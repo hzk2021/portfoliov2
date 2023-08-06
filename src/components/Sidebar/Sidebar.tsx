@@ -1,4 +1,4 @@
-import { Tabs, TabList, Spacer } from '@chakra-ui/react';
+import { Spacer, Flex } from '@chakra-ui/react';
 import SidebarTab from './SidebarTab';
 import {AiFillGithub, AiFillLinkedin, AiFillHome, AiFillIdcard} from 'react-icons/ai'
 import {BiSolidUser} from 'react-icons/bi'
@@ -17,59 +17,67 @@ function goToUrl(url : string) {
 
 function Sidebar() {
   const tab = useContext(TabContext);
+
   return (
     <nav>
-        <Tabs role={'navigation'}
+        <Flex role={'navigation'}
               position={"relative"}
               left={0}
-              height={"100vh"} 
-              orientation="vertical" 
+              minHeight={"100vh"} 
+              direction="column"
               border={0}
               align='center' 
               backgroundColor={"#181818"}>
 
-            <TabList display={"flex"}>
-                <div>
-                  <ProfileIcon />
-                </div>
-                <Spacer />
-                <div>
-                  <SidebarTab content={<AiFillHome size={25}/>} 
-                              text="Home" 
-                              active={tab?.tab === TabsEnum.Home} 
-                              onClick={() => tab?.setTab(TabsEnum.Home)}/>
-                  <SidebarTab content={<BiSolidUser size={25}/>} 
-                              text="About" 
-                              active={tab?.tab === TabsEnum.About}
-                              onClick={() => tab?.setTab(TabsEnum.About)}/>
-                  <SidebarTab content={<BsCodeSlash size={25}/>} 
-                              text="Skills" 
-                              active={tab?.tab === TabsEnum.Skills}
-                              onClick={() => tab?.setTab(TabsEnum.Skills)}/>
-                  <SidebarTab content={<BsFillBriefcaseFill size={25}/>} 
-                              text="Projects" 
-                              active={tab?.tab === TabsEnum.Projects}
-                              onClick={() => tab?.setTab(TabsEnum.Projects)}/>
-                  <SidebarTab content={<AiFillIdcard size={25}/>} 
-                              text="Contact" 
-                              active={tab?.tab === TabsEnum.Contact}
-                              onClick={() => tab?.setTab(TabsEnum.Contact)}/>
+              <div>
+                <ProfileIcon />
+              </div>
 
-                </div>
-                <Spacer />
-                <div>
-                  <SidebarTab content={<AiFillGithub size={25}/>} 
-                              text="GitHub" 
-                              active={false}
-                              onClick={() => {goToUrl(GITHUB_URL)}}/>
-                  <SidebarTab content={<AiFillLinkedin size={25}/>} 
-                              text="LinkedIn" 
-                              active={false}
-                              onClick={() => {goToUrl(LINKEDIN_URL)}}/>
-                </div>
-            </TabList>
+              <Spacer/>
+              
+              <Flex direction="column" gap={2}>
+                <SidebarTab content={<AiFillHome size={25}/>} 
+                            text="Home" 
+                            active={tab?.tab === TabsEnum.Home} 
+                            onClick={() => tab?.setTab(TabsEnum.Home)}
+                            href="/"/>
+                <SidebarTab content={<BiSolidUser size={25}/>} 
+                            text="About" 
+                            active={tab?.tab === TabsEnum.About}
+                            onClick={() => tab?.setTab(TabsEnum.About)}
+                            href="/about"/>
+                <SidebarTab content={<BsCodeSlash size={25}/>} 
+                            text="Skills" 
+                            active={tab?.tab === TabsEnum.Skills}
+                            onClick={() => tab?.setTab(TabsEnum.Skills)}
+                            href="/skills"/>
+                <SidebarTab content={<BsFillBriefcaseFill size={25}/>} 
+                            text="Projects" 
+                            active={tab?.tab === TabsEnum.Projects}
+                            onClick={() => tab?.setTab(TabsEnum.Projects)}
+                            href="/projects"/>
+                <SidebarTab content={<AiFillIdcard size={25}/>} 
+                            text="Contact" 
+                            active={tab?.tab === TabsEnum.Contact}
+                            onClick={() => tab?.setTab(TabsEnum.Contact)}
+                            href="/contact"/>
+
+              </Flex>
+              
+              <Spacer/>
+              
+              <Flex gap={2} mb={3}>
+                <SidebarTab content={<AiFillGithub size={25}/>} 
+                            text="GitHub" 
+                            active={false}
+                            onClick={() => {goToUrl(GITHUB_URL)}}/>
+                <SidebarTab content={<AiFillLinkedin size={25}/>} 
+                            text="LinkedIn" 
+                            active={false}
+                            onClick={() => {goToUrl(LINKEDIN_URL)}}/>
+              </Flex>
             
-        </Tabs>
+        </Flex>
     </nav>
   )
 }

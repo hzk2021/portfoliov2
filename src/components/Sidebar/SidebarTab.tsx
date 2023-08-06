@@ -1,16 +1,21 @@
-import { Tab, Tooltip } from '@chakra-ui/react'
+import { Tooltip } from '@chakra-ui/react'
 import { ReactNode } from 'react'
+import { Link } from '@chakra-ui/react'
+import { Link as ReactRouterLink } from 'react-router-dom'
 
-function SidebarTab({content, active, text, onClick = () => {}} : 
+function SidebarTab({content, active, text, onClick = () => {}, href} : 
     {
         content : string | JSX.Element | ReactNode,
         active : boolean,
         text : string,
-        onClick ?: () => void
+        onClick ?: () => void,
+        href ?: string
     }) {
   return (
     <Tooltip label={`${text}`} placement='auto'>
-        <Tab
+        <Link 
+            to={href}
+            as={ReactRouterLink}
             style={{
                 border: 0,
                 outline: 0,
@@ -24,7 +29,7 @@ function SidebarTab({content, active, text, onClick = () => {}} :
                 color: '#f80047'
             }}
             onClick={onClick}
-        >{content}</Tab>
+        >{content}</Link>
     </Tooltip>
   )
 }
