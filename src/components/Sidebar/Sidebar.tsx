@@ -23,7 +23,7 @@ function Sidebar() {
         <Flex role={'navigation'}
               position={"relative"}
               left={0}
-              minHeight={"100vh"} 
+              minHeight={"100%"} 
               direction="column"
               border={0}
               align='center' 
