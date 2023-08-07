@@ -1,26 +1,19 @@
 import { Box, Center, Flex, Show } from "@chakra-ui/react";
-import HrefButton from "../components/HrefButton";
-import ProfileIcon from "../components/Sidebar/ProfileIcon";
+import Timeline from "../components/Timeline";
 import WordWrapper from "../components/WordWrapper";
 
 const introMessage = <span>
-  Hi,
-  <br/>
-  I'm Zhenkai,
-  <br/>
-  An Aspiring Developer
-  <br/>
+    About Me
 </span>
 
 const content = <span>
-  I love programming! JavaScript & .NET Developer | CarrySharp
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo condimentum, iaculis quam sit amet, tincidunt ex. Integer euismod posuere massa, ultrices tincidunt purus.
   <br/>
   Check out my portfolio!
 
-  <HrefButton text="website" link="hi.com"/>
 </span>
 
-function Home() {
+function About() {
   
   return (
     <Flex grow={1}>
@@ -32,11 +25,11 @@ function Home() {
 
       <Center flexGrow={1}>
         <Show above="lg">
-        <ProfileIcon width={'10rem'}/>
+          <Timeline/>
         </Show>
       </Center>
     </Flex>
   )
 }
 
-export default Home;
+export default About;

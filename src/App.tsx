@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import TabContext from './contexts/TabContext'
 import { useState } from 'react'
 import Tabs from './enums/Tabs'
+import About from './pages/About'
 
 
 const theme = extendTheme({
@@ -28,6 +29,10 @@ function App() {
         <BrowserRouter>
             <Routes>
               <Route path='/' element={<Layout><Home /></Layout>} />
+              <Route path='/about' element={<Layout><About /></Layout>} />
+              <Route path='/skills' element={<Layout><Home /></Layout>} />
+              <Route path='/projects' element={<Layout><Home /></Layout>} />
+              <Route path='/contact' element={<Layout><Home /></Layout>} />
             </Routes>
         </BrowserRouter>
 

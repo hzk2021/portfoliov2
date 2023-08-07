@@ -1,5 +1,6 @@
 import { Container, Text } from "@chakra-ui/react"
 import { ReactNode } from "react"
+import { motion } from "framer-motion"
 
 type wrapperProps = {
   h1Text ?: string | JSX.Element | ReactNode,
@@ -9,6 +10,9 @@ type wrapperProps = {
 export default function Wrapper(props : wrapperProps) {
   return (
     <Container 
+      as={motion.div}
+      initial={{scale: 0}}
+      animate={{scale: 1}}
       color='white'
       _before={{
         content: '"<section>"',
