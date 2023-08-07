@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Show } from "@chakra-ui/react";
+import { Box, Center, Flex, Hide } from "@chakra-ui/react";
 import Timeline from "../components/Timeline";
 import WordWrapper from "../components/WordWrapper";
 
@@ -23,10 +23,10 @@ function About() {
           content={content}/>
       </Box>
 
-      <Center flexGrow={1}>
-        <Show above="lg">
+      <Center flexGrow={1} mb={2}>
+        <Hide below="lg">
           <Timeline/>
-        </Show>
+        </Hide>
       </Center>
     </Flex>
   )

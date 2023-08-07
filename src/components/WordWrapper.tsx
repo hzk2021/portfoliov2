@@ -7,7 +7,7 @@ type wrapperProps = {
   content ?: string | JSX.Element | ReactNode
 }
 
-export default function Wrapper(props : wrapperProps) {
+export default function WordWrapper(props : wrapperProps) {
   return (
     <Container 
       as={motion.div}
@@ -36,7 +36,7 @@ export default function Wrapper(props : wrapperProps) {
       }}>
 
 
-      <Text fontSize={['2rem', '2.5rem']} 
+      <Text fontSize={['2rem', '2rem', '2.5rem']} 
             fontWeight='extrabold'
 
             _before={{
@@ -61,7 +61,7 @@ export default function Wrapper(props : wrapperProps) {
             {props.h1Text}
       </Text>
 
-      <Text fontSize={['0.9rem', '1rem']} 
+      <Text fontSize={['1.2rem','1rem', '1rem']} 
             fontWeight='medium'>
             {props.content}
       </Text>
