@@ -31,7 +31,7 @@ function Sidebar() {
               p={3}>
 
               <Flex direction='column' align="center" w={"3rem"}>
-                <ProfileIcon />
+                <ProfileIcon width={"100%"}/>
                 <Text fontSize={'sm'} color="white" fontWeight="bold" mt={2}>zhenkai</Text>
               </Flex>
 

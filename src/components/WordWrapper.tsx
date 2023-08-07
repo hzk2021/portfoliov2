@@ -1,4 +1,4 @@
-import { Container, Text } from "@chakra-ui/react"
+import { Box, Text } from "@chakra-ui/react"
 import { ReactNode } from "react"
 import { motion } from "framer-motion"
 
@@ -9,7 +9,7 @@ type wrapperProps = {
 
 export default function WordWrapper(props : wrapperProps) {
   return (
-    <Container 
+    <Box
       as={motion.div}
       initial={{scale: 0}}
       animate={{scale: 1}}
@@ -62,10 +62,11 @@ export default function WordWrapper(props : wrapperProps) {
       </Text>
 
       <Text fontSize={['1.2rem','1rem', '1rem']} 
-            fontWeight='medium'>
+            fontWeight='medium'
+            w={['71%']}>
             {props.content}
       </Text>
 
-    </Container>
+    </Box>
   )
 }

@@ -8,6 +8,8 @@ import { useState } from 'react'
 import Tabs from './enums/Tabs'
 import About from './pages/About'
 import Skills from './pages/Skills'
+import Projects from './pages/Projects'
+import './app.css'
 
 
 const theme = extendTheme({
@@ -32,7 +34,7 @@ function App() {
               <Route path='/' element={<Layout><Home /></Layout>} />
               <Route path='/about' element={<Layout><About /></Layout>} />
               <Route path='/skills' element={<Layout><Skills /></Layout>} />
-              <Route path='/projects' element={<Layout><Home /></Layout>} />
+              <Route path='/projects' element={<Layout><Projects /></Layout>} />
               <Route path='/contact' element={<Layout><Home /></Layout>} />
             </Routes>
         </BrowserRouter>
