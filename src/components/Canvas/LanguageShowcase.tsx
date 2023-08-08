@@ -5,15 +5,29 @@
 
 import TagCloud, { TagCloudOptions } from "@frank-mayer/react-tag-cloud"
 
+function goToURL(url : string) {
+  window.open(url, '_blank')?.focus();
+}
+
 function LanguageShowcase() {
   return (
 
     <TagCloud
+    className="hii"
     options={(w: Window & typeof globalThis): TagCloudOptions => ({
         radius: Math.min(500, w.innerWidth, w.innerHeight) / 2,
-        maxSpeed: "fast",
+        maxSpeed: "normal",
     })}
-    // onClick={(tag: string) => alert(tag)}
+    onClick={(tag: string) => {
+      switch (tag) {
+        case "VSCODE":
+          goToURL("https://www.google.com");
+          break;
+      
+        default:
+          break;
+      }
+    }}
     onClickOptions={{ passive: true }}
     >
 
@@ -29,7 +43,7 @@ function LanguageShowcase() {
         "Framer Motion",
         "Three.js",
     ]}
-</TagCloud>
+    </TagCloud>
   )
 }
 

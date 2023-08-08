@@ -16,7 +16,7 @@ function Layout({children} : {children : string | JSX.Element | JSX.Element[]}) 
           <Sidebar />
 
           <Box flexGrow={1} px={10}>
-            <Flex minHeight={'100vh'} align="center" justify='space-between'>
+            <Flex minHeight={'100vh'} align="center">
               {children}
 
             </Flex>
