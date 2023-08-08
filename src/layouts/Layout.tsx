@@ -2,8 +2,10 @@ import Sidebar from "../components/Sidebar/Sidebar"
 import { Box, Flex } from "@chakra-ui/react";
 import ParticlesBackground from "../components/ParticlesBackground";
 import { AnimatePresence } from "framer-motion";
-import '@fontsource/poppins';
-import '@fontsource/poppins';
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/700.css';
+import '@fontsource/poppins/900.css';
+import '@fontsource/la-belle-aurore';
 
 
 function Layout({children} : {children : string | JSX.Element | JSX.Element[]}) {

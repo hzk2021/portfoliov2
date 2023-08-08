@@ -7,10 +7,13 @@ const introMessage = <span>
 </span>
 
 const content = <span>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo condimentum, iaculis quam sit amet, tincidunt ex. Integer euismod posuere massa, ultrices tincidunt purus.
-  <br/>
-  Check out my portfolio!
-
+I recently received my Diploma in Information Technology and my passion for the field has 
+propelled me to continuously explore and study emerging technologies. My goal is to enhance 
+my skills and advance my career in this everchanging industry.
+<br/>
+<br/>
+I recently received my Diploma in Information Technology and my passion for the field has 
+propelled me to continuously explore and study emerging technologies.
 </span>
 
 function About() {

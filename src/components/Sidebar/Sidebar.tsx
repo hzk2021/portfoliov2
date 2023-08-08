@@ -15,6 +15,10 @@ function goToUrl(url : string) {
   window.open(url, '_blank')?.focus();
 }
 
+function sendMail(){
+  window.open('mailto:hezhenkai1999@gmail.com');
+}
+
 function Sidebar() {
   const tab = useContext(TabContext);
 
@@ -58,11 +62,10 @@ function Sidebar() {
                             active={tab?.tab === TabsEnum.Projects}
                             onClick={() => tab?.setTab(TabsEnum.Projects)}
                             href="/projects"/>
-                {/* <SidebarTab content={<AiFillIdcard size={25}/>} 
+                <SidebarTab content={<AiFillIdcard size={25}/>} 
                             text="Contact" 
                             active={tab?.tab === TabsEnum.Contact}
-                            onClick={() => tab?.setTab(TabsEnum.Contact)}
-                            href="/contact"/> */}
+                            onClick={() => sendMail()}/>
 
               </Flex>
               

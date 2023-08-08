@@ -1,10 +1,9 @@
 import { Box, Center, Flex, Show } from "@chakra-ui/react";
-import HrefButton from "../components/HrefButton";
 import ProfileIcon from "../components/Sidebar/ProfileIcon";
 import WordWrapper from "../components/WordWrapper";
 
 const introMessage = <span>
-  Hi,
+  Hi!
   <br/>
   I'm Zhenkai,
   <br/>
@@ -13,11 +12,10 @@ const introMessage = <span>
 </span>
 
 const content = <span>
-  I love programming! JavaScript & .NET Developer | CarrySharp
+  Web & Software Developer | Tech Enthusiast
   <br/>
-  Check out my portfolio!
-
-  <HrefButton text="website" link="hi.com"/>
+  <br/>
+  Always looking to learn new technological trends!
 </span>
 
 function Home() {

@@ -38,8 +38,10 @@ function Projects() {
     <SimpleGrid as={motion.div}
           initial={{scale: 0.5}}
           animate={{scale: 1}}
-          columns={{base: 4, sm: 4, md:5, lg: 6}}
-          spacing={10}
+          columns={{base: 3, sm: 4, md:5, lg: 6}}
+          spacingX={20}
+          spacingY={[1, 5, 10]}
+
           w="100%"
           justifyItems='center'
           alignItems="center"> 

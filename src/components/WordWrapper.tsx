@@ -20,6 +20,7 @@ export default function WordWrapper(props : wrapperProps) {
         marginBottom: "2em",
         color: "#515152",
         fontFamily: "La Belle Aurore, cursive",
+        fontSize: ["1.3rem","1.5rem"],
         fontWeight: "bold",
         fontStyle: 'italic',
 
@@ -30,6 +31,7 @@ export default function WordWrapper(props : wrapperProps) {
         marginTop: "2em",
         color: "#515152",
         fontFamily: "La Belle Aurore, cursive",
+        fontSize: ["1.3rem","1.5rem"],
         fontWeight: "bold",
         fontStyle: 'italic',
 
@@ -37,7 +39,7 @@ export default function WordWrapper(props : wrapperProps) {
 
 
       <Text fontSize={['2rem', '2rem', '2.5rem']} 
-            fontWeight='extrabold'
+            fontWeight='bold'
 
             _before={{
               content: '"<h1>"',
@@ -46,7 +48,7 @@ export default function WordWrapper(props : wrapperProps) {
               fontFamily: "'La Belle Aurore', cursive",
               fontStyle: 'italic',
               fontWeight: "bold",
-              fontSize: "1rem"
+              fontSize: ["1.2rem","1.4rem"],
             }}
             _after={{
               content: '"</h1>"',
@@ -55,13 +57,13 @@ export default function WordWrapper(props : wrapperProps) {
               fontFamily: "'La Belle Aurore', cursive",
               fontWeight: "bold",
               fontStyle: 'italic',
-              fontSize: "1rem",
+              fontSize: ["1.2rem","1.4rem"],
             }}>
 
             {props.h1Text}
       </Text>
 
-      <Text fontSize={['1.2rem','1rem', '1rem']} 
+      <Text fontSize={['0.8rem','1rem', '1rem']} 
             fontWeight='medium'
             w={['71%']}>
             {props.content}

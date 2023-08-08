@@ -26,6 +26,7 @@ function ProjectItem({icon, name, bgColour, tipLabel, pcImgSrc, mobileImgSrc, te
       <Box 
           onClick={onOpen}
           w="100%"
+          minW={"50px"}
           maxW={"150px"}
           p={2}
           as={motion.div}
