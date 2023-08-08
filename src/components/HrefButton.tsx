@@ -7,8 +7,12 @@ interface buttonProps extends ButtonProps{
 
 function HrefButton({text, link, ...props} : buttonProps) {
   return (
-    <span style={{display: "block", marginTop: 10}}>
-        <Button w={'100%'} as={Link} href={link} {...props}>{text}</Button>
+    <span style={{display: "block", marginTop: 10}} >
+        <Button w={'100%'} as={Link} href={link} {...props} bg="#08fdd8" color="black" borderRadius={0} border="2px solid #09a18a" boxShadow='inner' _hover={{
+          background: "f80047",
+          textDecoration: 'none',
+          color: "black"
+        }}>{text}</Button>
     </span>
 )
 }

@@ -19,11 +19,72 @@ function LanguageShowcase() {
         maxSpeed: "normal",
     })}
     onClick={(tag: string) => {
+
+
       switch (tag) {
-        case "VSCODE":
-          goToURL("https://www.google.com");
+        case "NEXTJS":
+          goToURL("https://nextjs.org/");
           break;
-      
+        case "VITE":
+          goToURL("https://vitejs.dev/");
+          break;
+        case "REACT":
+          goToURL("https://react.dev/");
+          break;
+        case "TYPESCRIPT":
+          goToURL("https://www.typescriptlang.org/");
+          break;
+        case "JAVASCRIPT":
+          goToURL("https://en.wikipedia.org/wiki/JavaScript");
+          break;
+        case "NODEJS":
+          goToURL("https://nodejs.org/en");
+          break;
+        case "WEBPACK":
+          goToURL("https://webpack.js.org/");
+          break;
+        case "BABEL":
+          goToURL("https://babeljs.io/");
+          break;
+        case "GIT":
+          goToURL("https://git-scm.com/");
+          break;
+        case "JQUERY":
+          goToURL("https://jquery.com/");
+          break;
+        case "FLASK":
+          goToURL("https://flask.palletsprojects.com/en/2.3.x/");
+          break;
+        case "ORACLE APEX":
+          goToURL("https://apex.oracle.com/en/");
+          break;
+        case "JEST":
+          goToURL("https://jestjs.io/");
+          break;
+        case "ORM":
+          goToURL("https://www.theserverside.com/definition/object-relational-mapping-ORM");
+          break;
+        case ".NET":
+          goToURL("https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet");
+          break;
+        case "PYTHON":
+          goToURL("https://www.python.org/");
+          break;
+        case "SQL":
+          goToURL("https://en.wikipedia.org/wiki/SQL");
+          break;
+        case "NOSQL":
+          goToURL("https://en.wikipedia.org/wiki/NoSQL");
+          break;
+        case "EXPRESSJS":
+          goToURL("https://expressjs.com/");
+          break;
+        case "AWS CLOUD":
+          goToURL("https://aws.amazon.com/");
+          break;
+        case "ALIBABA CLOUD":
+          goToURL("https://sg.alibabacloud.com/?utm_key=se_1012048803&utm_content=se_1012048803");
+          break;
         default:
           break;
       }
@@ -32,16 +93,27 @@ function LanguageShowcase() {
     >
 
     {[
-        "VSCode",
-        "TypeScript",
+        "NextJS",
+        "Vite",
         "React",
-        "Preact",
-        "Parcel",
+        "TypeScript",
+        "JavaScript",
+        "NodeJS",
+        "Webpack",
+        "Babel",
+        "Git",
+        "jQuery" ,
+        "Flask",
+        "Oracle APEX",
         "Jest",
-        "Next",
-        "ESLint",
-        "Framer Motion",
-        "Three.js",
+        "ORM",
+        ".NET",
+        "Python",
+        "SQL",
+        "NoSQL",
+        "ExpressJS",
+        "AWS Cloud",
+        "Alibaba Cloud"
     ]}
     </TagCloud>
   )

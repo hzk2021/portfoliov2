@@ -40,4 +40,21 @@ export enum Icons {
     ESLint,
     FontAwesome,
     MUI,
+
+    RiotGames,
+    MonkeyType,
+    Android,
+    AndroidStudio,
+    Discord,
+    Pokemon,
+    SpringSecurity,
+    TacoBell,
+    ResumeCV,
+    Shopify,
+    GoogleSheets,
+    Vite,
+    TicTacToe,
+    GoogleFit,
+    Heroku,
+
 }

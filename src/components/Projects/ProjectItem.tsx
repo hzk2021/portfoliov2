@@ -12,8 +12,8 @@ interface projectItemProp {
     mobileImgSrc ?: string,
     techIcons : JSX.Element[],
     description: string,
-    liveLink: string,
-    sourceLink: string
+    liveLink ?: string,
+    sourceLink ?: string
 }
 
 function ProjectItem({icon, name, bgColour, tipLabel, pcImgSrc, mobileImgSrc, techIcons ,description, liveLink, sourceLink} : projectItemProp) {

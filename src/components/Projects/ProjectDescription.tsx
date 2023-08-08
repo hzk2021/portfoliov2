@@ -19,10 +19,10 @@ function ProjectDescription({icons, description, liveLink, sourceLink} : descrip
 
         <Text fontSize={["0.8rem", "0.9rem", "1rem"]}>{description}</Text>
 
-        <Flex justifyContent="center" gap={5}>
+        <Flex justifyContent="center" gap={5} mb={5}>
         {liveLink && <HrefButton text="Live Demo" link={liveLink}/>}
         {sourceLink && <HrefButton text="Source" link={sourceLink}/>}
-    </Flex>
+        </Flex>
     </>
   )
 }

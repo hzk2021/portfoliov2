@@ -58,11 +58,11 @@ function Sidebar() {
                             active={tab?.tab === TabsEnum.Projects}
                             onClick={() => tab?.setTab(TabsEnum.Projects)}
                             href="/projects"/>
-                <SidebarTab content={<AiFillIdcard size={25}/>} 
+                {/* <SidebarTab content={<AiFillIdcard size={25}/>} 
                             text="Contact" 
                             active={tab?.tab === TabsEnum.Contact}
                             onClick={() => tab?.setTab(TabsEnum.Contact)}
-                            href="/contact"/>
+                            href="/contact"/> */}
 
               </Flex>
               

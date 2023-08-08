@@ -11,8 +11,8 @@ type modalProps = {
   mobileImgSrc ?: string
   techIcons : JSX.Element[],
   description: string,
-  liveLink: string,
-  sourceLink: string
+  liveLink ?: string,
+  sourceLink ?: string
 }
 
 function ProjectModal({isOpen, onClose, projectName, pcImgSrc, mobileImgSrc, techIcons, description, liveLink, sourceLink} : modalProps) {
