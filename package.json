@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/hzk2021/portfoliov2/",
+  "homepage": "https://hzk2021.github.io/portfoliov2/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
