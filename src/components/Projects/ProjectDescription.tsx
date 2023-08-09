@@ -17,7 +17,7 @@ function ProjectDescription({icons, description, liveLink, sourceLink} : descrip
             }))}
         </Center>
 
-        <Text fontSize={["0.8rem", "0.9rem", "1rem"]}>{description}</Text>
+        <Text fontSize={["0.8rem", "0.9rem", "1rem"]} fontFamily="Poppins">{description}</Text>
 
         <Flex justifyContent="center" gap={5} mb={5}>
         {liveLink && <HrefButton text="Live Demo" link={liveLink}/>}

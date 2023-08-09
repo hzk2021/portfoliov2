@@ -1,7 +1,7 @@
 import { Box, Text } from "@chakra-ui/react"
 import { ReactNode } from "react"
 import { motion } from "framer-motion"
-
+ 
 type wrapperProps = {
   h1Text ?: string | JSX.Element | ReactNode,
   content ?: string | JSX.Element | ReactNode

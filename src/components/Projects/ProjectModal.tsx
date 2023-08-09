@@ -20,7 +20,7 @@ function ProjectModal({isOpen, onClose, projectName, pcImgSrc, mobileImgSrc, tec
     <Modal isOpen={isOpen} onClose={onClose} isCentered size="4xl">
       <ModalOverlay bg="blackAlpha.300" backdropFilter='blur(10px)'/>
       <ModalContent bg="#252627" color="white" borderRadius='none'>
-        <ModalHeader textAlign="center" fontSize={["2rem", "2.5rem", "3rem"]} fontWeight="bold">{projectName}</ModalHeader>
+        <ModalHeader textAlign="center" fontSize={["2rem", "2.5rem", "3rem"]} fontFamily="Poppins" fontWeight="bold">{projectName}</ModalHeader>
         <ModalCloseButton/>
 
         {pcImgSrc && !mobileImgSrc &&
