@@ -63,9 +63,9 @@ export default function WordWrapper(props : wrapperProps) {
             {props.h1Text}
       </Text>
 
-      <Text fontSize={['0.8rem','1rem', '1rem']} 
+      <Text fontSize={['0.9rem','1rem', '1rem']} 
             fontWeight='medium'
-            w={['71%']}>
+            w={['100%', "71%"]}>
             {props.content}
       </Text>
 

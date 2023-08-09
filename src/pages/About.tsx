@@ -7,13 +7,16 @@ const introMessage = <span>
 </span>
 
 const content = <span>
+I have been in touch with Information Technology since I enrolled at Nanyang Polytechnic in 2020, and 
+I have been building various projects for all kinds of platforms since then.
+<br/>
+<br/>
 I recently received my Diploma in Information Technology and my passion for the field has 
-propelled me to continuously explore and study emerging technologies. My goal is to enhance 
+propelled me to continuously explore and study emerging technologies. 
+<br/>
+<br/>
+My goal is to enhance 
 my skills and advance my career in this everchanging industry.
-<br/>
-<br/>
-I recently received my Diploma in Information Technology and my passion for the field has 
-propelled me to continuously explore and study emerging technologies.
 </span>
 
 function About() {

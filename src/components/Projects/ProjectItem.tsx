@@ -1,6 +1,5 @@
 import { Box, Center, Tooltip, useDisclosure } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
-import React from 'react'
 import ProjectModal from './ProjectModal';
 
 interface projectItemProp {

@@ -7,9 +7,13 @@ const introMessage = <span>
 </span>
 
 const content = <span>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo condimentum, iaculis quam sit amet, tincidunt ex. Integer euismod posuere massa, ultrices tincidunt purus.
+  I had been running a side hustle from 2020-2022, selling monthly subscriptions for a game helper.
   <br/>
-  Check out my portfolio!
+  <br/>
+  During my studies, I have accumulated a plethora of skills ranging from software development & problem solving to database management.
+  <br/>
+  <br/>
+  In addition, I have been upskilling myself by learning new technologies and languages while job hunting. e.g. TypeScript, NextJS, Vite, etc.
 </span>
 
 function Skills() {

@@ -1,6 +1,6 @@
 import { Spacer, Flex, Text } from '@chakra-ui/react';
 import SidebarTab from './SidebarTab';
-import {AiFillGithub, AiFillLinkedin, AiFillHome, AiFillIdcard} from 'react-icons/ai'
+import {AiFillGithub, AiFillLinkedin, AiFillHome} from 'react-icons/ai'
 import {BiSolidUser} from 'react-icons/bi'
 import {BsCodeSlash, BsFillBriefcaseFill} from 'react-icons/bs'
 import TabContext from '../../contexts/TabContext';
@@ -13,10 +13,6 @@ const LINKEDIN_URL = 'https://www.linkedin.com/in/he-zhenkai-7b3684218/';
 
 function goToUrl(url : string) {
   window.open(url, '_blank')?.focus();
-}
-
-function sendMail(){
-  window.open('mailto:hezhenkai1999@gmail.com');
 }
 
 function Sidebar() {
@@ -62,10 +58,6 @@ function Sidebar() {
                             active={tab?.tab === TabsEnum.Projects}
                             onClick={() => tab?.setTab(TabsEnum.Projects)}
                             href="/projects"/>
-                <SidebarTab content={<AiFillIdcard size={25}/>} 
-                            text="Contact" 
-                            active={tab?.tab === TabsEnum.Contact}
-                            onClick={() => sendMail()}/>
 
               </Flex>
               

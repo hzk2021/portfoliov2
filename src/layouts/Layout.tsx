@@ -6,6 +6,7 @@ import '@fontsource/poppins/400.css';
 import '@fontsource/poppins/700.css';
 import '@fontsource/poppins/900.css';
 import '@fontsource/la-belle-aurore';
+import StickySideLink from "../components/StickySideLink";
 
 
 function Layout({children} : {children : string | JSX.Element | JSX.Element[]}) {
@@ -20,10 +21,11 @@ function Layout({children} : {children : string | JSX.Element | JSX.Element[]}) 
           <Box flexGrow={1} px={10}>
             <Flex minHeight={'100vh'} align="center">
               {children}
-
             </Flex>
           </Box>
         </Flex>
+
+        <StickySideLink/>
       </AnimatePresence>
     </>
 
