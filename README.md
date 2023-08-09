@@ -11,7 +11,7 @@
 	<h3><b><a href="https://hzk2021.github.io/portfoliov2">View Live Demo</a></b></h3>
 </div>
 
-![Gif of Project](./readme-assets/portfoliov2.mov)
+![](./readme-assets/portfoliov2.gif)
 
 ## Description
 
