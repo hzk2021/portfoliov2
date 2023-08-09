@@ -1,27 +1,49 @@
-# React + TypeScript + Vite
+<div align=center>
+	<h1>Zhenkai's Portfolio v2
+	<br>
+		<img src="https://img.shields.io/static/v1?label=&message=Vite&color=646CFF&style=for-the-badge&logo=vite&logoColor=white&logoWidth=&labelColor=&link=">
+		<img src="https://img.shields.io/static/v1?label=&message=React&color=61DAFB&style=for-the-badge&logo=react&logoColor=black&logoWidth=&labelColor=&link=">
+		<img src="https://img.shields.io/static/v1?label=&message=TypeScript&color=3178C6&style=for-the-badge&logo=typescript&logoColor=white&logoWidth=&labelColor=&link=">
+		<img src="https://img.shields.io/static/v1?label=&message=Chakra UI&color=06B6D4&style=for-the-badge&logo=chakraui&logoColor=white&logoWidth=&labelColor=&link=">
+		<img src="https://img.shields.io/static/v1?label=&message=Router&color=CA4245&style=for-the-badge&logo=reactrouter&logoColor=white&logoWidth=&labelColor=&link=">
+		<br>
+	</h1>
+	<h3><b><a href="https://hzk2021.github.io/portfoliov2">View Live Demo</a></b></h3>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Gif of Project](./readme-assets/portfoliov2.mov)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Zhenkai's revamped portfolio site.
 
-## Expanding the ESLint configuration
+## Built Using
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Vite <img height="16" width="16" src="https://cdn.simpleicons.org/vite" />
+- React <img height="16" width="16" src="https://cdn.simpleicons.org/react" />
+- TypeScript <img height="16" width="16" src="https://cdn.simpleicons.org/typescript" />
+- ChakraUI <img height="16" width="16" src="https://cdn.simpleicons.org/chakraUI" />
+- React Router <img height="16" width="16" src="https://cdn.simpleicons.org/reactrouter" />
 
-- Configure the top-level `parserOptions` property like this:
+#### Libraries
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- [Framer Motion](https://www.framer.com/motion/)
+- [tsParticles](https://particles.js.org/)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### Icons
+
+- [React Icons](https://github.com/react-icons/react-icons)
+
+#### Other
+
+- [Tag Cloud](https://github.com/Frank-Mayer/react-tag-cloud)
+
+## Preview
+
+#### Desktop
+
+![Desktop](./readme-assets/portfoliov2.png)
+
+#### Mobile
+
+![Desktop](./readme-assets/portfoliov2-mobile.png)
