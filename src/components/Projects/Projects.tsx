@@ -9,6 +9,7 @@ import memoryImg from "../../assets/projects_images/memory-game.png";
 import memoryMobileImg from "../../assets/projects_images/memory-game-mobile.png";
 import cvImg from "../../assets/projects_images/cv-app.png";
 import cvMobileImg from "../../assets/projects_images/cv-app-mobile.png";
+import drawBotImg from "../../assets/projects_images/drawbot.png";
 import restaurantMenuImg from "../../assets/projects_images/restaurant-menu.png";
 import restaurantMenuMobileImg from "../../assets/projects_images/restaurant-menu-mobile.png";
 import myFitElderlyImg from "../../assets/projects_images/myfitelderly.png";
@@ -144,9 +145,18 @@ function Projects() {
                      liveLink='https://hzk2021.github.io/cv-creator'
                      sourceLink='https://github.com/hzk2021/cv-creator'/>
 
+       <ProjectItem icon={icons[Icons.Probot]} 
+                     name="Draw Bot" 
+                     tipLabel='[Drawing Bot] Click to find out more!'
+                     pcImgSrc={drawBotImg}
+                     techIcons={[icons[Icons.CSharp], icons[Icons.dotNET]]}
+                     description="An automated bot that, given a picture, automatically paints/draws for you. It currently supports skribbl.io and gartic.io."
+                     liveLink='https://www.youtube.com/watch?v=ctfJ_KSNlZw'
+                     sourceLink='https://github.com/hzk2021/DrawPaintBot'/>
+
        <ProjectItem icon={icons[Icons.Discord]} 
                      name="Discord Bot" 
-                     tipLabel='[Automation Discord Bot] Click to find out more!'
+                     tipLabel='[Discord Bot] Click to find out more!'
                      pcImgSrc={discordBotImg}
                      techIcons={[icons[Icons.Discord], icons[Icons.JavaScript], icons[Icons.Heroku]]}
                      description="An automated Discord bot that assists customers and filters profanities. Currently serving 800+ members. Built using the Discord API and JavaScript. Hosted on Heroku (free tier)" />
@@ -202,7 +212,7 @@ function Projects() {
 
        <ProjectItem icon={icons[Icons.CSS]} 
                      name="Restaurant CSS"
-                     tipLabel='[Static Restaurant Website] Click to find out more!'
+                     tipLabel='[Static Website] Click to find out more!'
                      pcImgSrc={restaurantMenuImg}
                      mobileImgSrc={restaurantMenuMobileImg}
                      techIcons={[icons[Icons.Webpack], icons[Icons.Babel], icons[Icons.HTML], icons[Icons.CSS]]}

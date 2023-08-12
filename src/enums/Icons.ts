@@ -56,6 +56,7 @@ export enum Icons {
     TicTacToe,
     GoogleFit,
     Heroku,
-    ChakraUI
+    ChakraUI,
+    Probot,
 
 }

@@ -10,7 +10,7 @@ const content = <span>
   I had been running a side hustle from 2020-2022, selling monthly subscriptions for a game helper.
   <br/>
   <br/>
-  During my studies, I have accumulated a plethora of skills ranging from software development & problem solving to database management.
+  During my studies, I picked up a plethora of skills ranging from software development & problem solving to database management.
   <br/>
   <br/>
   In addition, I have been upskilling myself by learning new technologies and languages while job hunting. e.g. TypeScript, NextJS, Vite, etc.

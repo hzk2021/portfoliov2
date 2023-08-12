@@ -7,8 +7,8 @@ const introMessage = <span>
 </span>
 
 const content = <span>
-I have been in touch with Information Technology since I enrolled at Nanyang Polytechnic in 2020, and 
-I have been building various projects for all kinds of platforms since then.
+I have been in touch with Information Technology since the moment I enrolled at Nanyang Polytechnic in 2020, 
+and I have been building various projects for all kinds of platforms.
 <br/>
 <br/>
 I recently received my Diploma in Information Technology and my passion for the field has 
